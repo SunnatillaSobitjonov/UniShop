@@ -81,7 +81,7 @@ export function AppSidebar() {
             <SidebarMenuButton asChild>
               <Link href="/">
                 <Image src="/logo.png" alt="logo" width={40} height={40} />
-                <span>E-Comers</span>
+                <span>UniShop</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
