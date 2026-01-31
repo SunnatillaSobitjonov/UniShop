@@ -35,7 +35,7 @@ const SingleUserPage = () => {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>Sunnatilla Sobitjonov</BreadcrumbPage>
+            <BreadcrumbPage>John Doe</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
@@ -51,7 +51,7 @@ const SingleUserPage = () => {
                 <HoverCardTrigger>
                   <BadgeCheck
                     size={36}
-                    className="rounded-full bg-blue-500/30 border-1 border-blue-500/50 p-2"
+                    className="rounded-full bg-blue-500/30 border border-blue-500/50 p-2"
                   />
                 </HoverCardTrigger>
                 <HoverCardContent>
@@ -65,7 +65,7 @@ const SingleUserPage = () => {
                 <HoverCardTrigger>
                   <Shield
                     size={36}
-                    className="rounded-full bg-green-800/30 border-1 border-green-800/50 p-2"
+                    className="rounded-full bg-green-800/30 border border-green-800/50 p-2"
                   />
                 </HoverCardTrigger>
                 <HoverCardContent>
@@ -80,7 +80,7 @@ const SingleUserPage = () => {
                 <HoverCardTrigger>
                   <Candy
                     size={36}
-                    className="rounded-full bg-yellow-500/30 border-1 border-yellow-500/50 p-2"
+                    className="rounded-full bg-yellow-500/30 border border-yellow-500/50 p-2"
                   />
                 </HoverCardTrigger>
                 <HoverCardContent>
@@ -94,7 +94,7 @@ const SingleUserPage = () => {
                 <HoverCardTrigger>
                   <Citrus
                     size={36}
-                    className="rounded-full bg-orange-500/30 border-1 border-orange-500/50 p-2"
+                    className="rounded-full bg-orange-500/30 border border-orange-500/50 p-2"
                   />
                 </HoverCardTrigger>
                 <HoverCardContent>
@@ -105,6 +105,22 @@ const SingleUserPage = () => {
                 </HoverCardContent>
               </HoverCard>
             </div>
+          </div>
+          {/* USER CARD CONTAINER */}
+          <div className="bg-primary-foreground p-4 rounded-lg space-y-2">
+            <div className="flex items-center gap-2">
+              <Avatar className="size-12">
+                <AvatarImage src="https://avatars.githubusercontent.com/u/1486366" />
+                <AvatarFallback>JD</AvatarFallback>
+              </Avatar>
+              <h1 className="text-xl font-semibold">John Doe</h1>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+              voluptas distinctio ab ipsa commodi fugiat labore quos veritatis
+              cum corrupti sed repudiandae ipsum, harum recusandae ratione ipsam
+              in, quis quia.
+            </p>
           </div>
           {/* INFORMATION CONTAINER */}
           <div className="bg-primary-foreground p-4 rounded-lg">
@@ -125,53 +141,34 @@ const SingleUserPage = () => {
                 <Progress value={66} />
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-bold">Username:</span>
-                <span>Sunnatilla</span>
+                <span className="font-bold">Full name:</span>
+                <span>John Doe</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-bold">Email:</span>
-                <span>Sunnatilla@gmail.com</span>
+                <span>john.doe@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-bold">Phone:</span>
-                <span>+998 97 455-13-19</span>
+                <span>+1 234 5678</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-bold">Location:</span>
-                <span>Uzbekistan</span>
+                <span className="font-bold">Address:</span>
+                <span>123 Main St</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-bold">Role:</span>
-                <Badge>Admin</Badge>
+                <span className="font-bold">City:</span>
+                <span>New York</span>
               </div>
             </div>
             <p className="text-sm text-muted-foreground mt-4">
-              Joined on 2026.01.19
+              Joined on 2025.01.01
             </p>
-          </div>
-          {/* CARD LIST CONTAINER */}
-          <div className="bg-primary-foreground p-4 rounded-lg">
-            <CardList title="Recent Transactions" />
           </div>
         </div>
         {/* RIGHT */}
         <div className="w-full xl:w-2/3 space-y-6">
-          {/* USER CARD CONTAINER */}
-          <div className="bg-primary-foreground p-4 rounded-lg space-y-2">
-            <div className="flex items-center gap-2">
-              <Avatar className="size-12">
-                <AvatarImage src="https://github.com/shadcn.png" />
-                <AvatarFallback>SS</AvatarFallback>
-              </Avatar>
-              <h1 className="text-xl font-semibold">Sunnatilla</h1>
-            </div>
-            <p className="text-sm text-muted-foreground">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-              voluptas distinctio ab ipsa commodi fugiat labore quos veritatis
-              cum corrupti sed repudiandae ipsum, harum recusandae ratione ipsam
-              in, quis quia.
-            </p>
-          </div>
+          
           {/* CHART CONTAINER */}
           <div className="bg-primary-foreground p-4 rounded-lg">
             <h1 className="text-xl font-semibold">User Activity</h1>
